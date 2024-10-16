@@ -7,6 +7,7 @@
 # 🙁 
 
 def main():
+	 # asking user for input and calling twice .replace() method
 	user_input = input().replace(":)", "🙂").replace(":(", "🙁")
 	print(user_input)
 
