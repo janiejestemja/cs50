@@ -1,7 +1,11 @@
 # Vanity Plates
 
 def main():
+
+    # asking user for input 
     plate = input("Plate: ")
+    
+    # printing either "Valid" or "Invalid" depending of the return value of is_valid
     if is_valid(plate):
         print("Valid")
     else:
@@ -9,6 +13,15 @@ def main():
 
 
 def is_valid(s):
+    """
+    Checks simplified for validity of a str to be accepted as a vanity plate in Massachusetts
+    
+    Parameters:
+    s (str): a str representing a potential vanity plate
+
+    Returns: 
+    bool: Truthvalue of the question if str is a valid vanity plate
+    """
     # lengthcheck
     if not len(s) in range(2, 7) or not s.isalnum():
         return False
