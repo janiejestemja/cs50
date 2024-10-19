@@ -6,13 +6,25 @@ def main():
     print(convert(input("Hours: ").strip()))
 
 def convert(s):
+    """
+    Converts times in 12h format to 24h format.
+
+    Paramters:
+    s (str): A str containing times in 12h format as specified.
+
+    Returns:
+    str: A corresponding str containing the given times in 24h format.
+    """
     # checking and assigning
     if match := re.search(r"^(1?\d)(?::([0-5]\d))? ([A|P])M to (1?\d)(?::([0-5]\d))? ([A|P])M$", s, re.IGNORECASE):
+        # extracting starttime
         sth = int(match.group(1))
         stap = match.group(3).lower()
+        
+        # exctracting endtime
         enh = int(match.group(4))
         enap = match.group(6).lower()
-        print(enap)
+
         # doing leftover checks 
         if sth > 12 or enh > 12:
             raise ValueError
