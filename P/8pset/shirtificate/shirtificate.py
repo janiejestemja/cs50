@@ -3,10 +3,29 @@
 from fpdf import FPDF, XPos, YPos, Align
 
 def main():
+    """
+    Prompt the user for their name and generate a CS50 shirtificate.
+
+    The function asks for the user's name, then calls `make_shirtificate()` 
+    to create a PDF with a personalized message.
+    """
     name = input("Name: ").strip()
     make_shirtificate(name)
 
 def make_shirtificate(name):
+    """
+    Create a PDF shirtificate with the provided name.
+
+    This function generates a "shirtificate" PDF using the `fpdf` library. 
+    The PDF contains the title "CS50 Shirtificate" and a message with the 
+    user's name indicating they took CS50. The PDF is saved as "shirtificate.pdf".
+
+    Args:
+        name (str): The name of the person to include on the shirtificate.
+
+    Raises:
+        RuntimeError: If there is an error creating or saving the PDF.
+    """
     shirt_print = name + " took CS50"
     pdf = FPDF()
     pdf.add_page()

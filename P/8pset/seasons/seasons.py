@@ -7,6 +7,16 @@ from datetime import date
 
 
 def main():
+    """
+    Prompt the user for a date and calculate the difference in minutes from the current date.
+
+    Validates the user input, ensuring the date is in the correct format (YYYY-MM-DD).
+    If the input is valid, it calculates the time difference in minutes and converts 
+    it to words. If the input is invalid, the program exits with an error message.
+
+    Raises:
+        SystemExit: If the input is not in the correct format or if the date is invalid.
+    """
     s = input("Date: ").strip()
     date_today = date.today()
 
@@ -34,6 +44,23 @@ def main():
 
 
 def func(date_today, a_date):
+    """
+    Calculate the difference in minutes between two dates and return it as a string in words.
+
+    The function takes two `date` objects, calculates the difference in minutes between 
+    them, and converts the result to a word string. It raises an error if the difference 
+    is negative or if the input types are not `datetime.date`.
+
+    Args:
+        date_today (datetime.date): The current date.
+        a_date (datetime.date): The date to compare against the current date.
+
+    Returns:
+        str: The difference in minutes expressed in words.
+
+    Raises:
+        ValueError: If either of the input values are not `datetime.date` or if `a_date` is in the future.
+    """
     # input validation
     teda = date(year=1, month=1, day=1)
     if type(date_today) != type(teda) or type(a_date) != type(teda):
