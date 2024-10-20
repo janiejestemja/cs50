@@ -10,11 +10,11 @@ def shorten(word):
 	"""
 	Shortens a word by ommiting vowels.
 
-	Parameters:
-	word (str): A word or multiple.
+	Args:
+		word (str): A word or multiple.
 
 	Returns:
-	str: A str containing the word without vowels
+		str: A str containing the word without vowels
 	"""
 	# definition of vowels
 	vowels = ["a", "e", "i", "o", "u"]

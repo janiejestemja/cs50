@@ -11,14 +11,14 @@ def value(greeting):
 	"""
 	Assigns a value to a string depending on what is starts with. 
 
-	Parameters:
-	greeting (str): A potential greeting.
+	Args:
+		greeting (str): A potential greeting.
 
 	Returns:
-	int: 0, 20, 100.
+		int: 0, 20, 100.
 
 	Raises:
-	ValueError: In case the argument is not a str.
+		ValueError: In case the argument is not a str.
 	"""
 	# checking type of argument and raising exception if not a str
 	if type(greeting) != type(str()):

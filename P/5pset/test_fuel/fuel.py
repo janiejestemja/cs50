@@ -21,15 +21,15 @@ def convert(fraction):
 	"""
 	Converts a fraction to a number.
 
-	Parameters:
-	fraction (str): A str in X/Y format where X an Y are integers.
+	Args:
+		fraction (str): A str in X/Y format where X an Y are integers.
 
 	Returns:
-	int: Nearest int between 0 and 100, inclusive.
+		int: Nearest int between 0 and 100, inclusive.
 
 	Raises:
-	ValueError: If X is greater than Y.
-	ZeroDivisionError: If Y is zero.
+		ValueError: If X is greater than Y.
+		ZeroDivisionError: If Y is zero.
 	"""
 	# splitting input into nominator and denominator
 	nominator, denominator = fraction.split("/")
@@ -60,11 +60,11 @@ def gauge(percentage):
 	"""
 	Represents a fuel-gauge.
 
-	Parameters:
-	percentage (int/float): A number.
+	Args:
+		percentage (int/float): A number.
 
 	Returns:
-	str: A str representing the output of a fuel-gauge.
+		str: A str representing the output of a fuel-gauge.
 	"""
     
 	# chcking for fullness and emptyness
