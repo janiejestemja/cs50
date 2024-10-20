@@ -26,11 +26,11 @@ def helper_func(item):
 	"""
 	Checks if an item is on the given menu and returns the price.
 
-	Parameters:
-	item (str): A potential name of an item on the given menu.
+	Args:
+		item (str): A potential name of an item on the given menu.
 
 	Returns:
-	float: Price of the item if on the menu otherwise zero.
+		float: Price of the item if on the menu otherwise zero.
 	"""
 
 	# definition of the menu as a dict.

@@ -83,13 +83,13 @@ def date_validation(year, month, day):
 	"""
 	Validates dates in a very simplified way.
 
-	Parameters:
-	year (str, int): A number representing a year.
-	month (str, int): A number representing a month.
-	day (str, int): A number representing a day.
+	Args:
+		year (str, int): A number representing a year.
+		month (str, int): A number representing a month.
+		day (str, int): A number representing a day.
 
 	Returns: 
-	bool: Truthvalue of validation of the given date.
+		bool: Truthvalue of validation of the given date.
 	"""
 
 	# trying to typeforcing arguments to int

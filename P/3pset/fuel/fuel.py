@@ -29,18 +29,18 @@ def helper_fuc(nominator, denominator):
 	Calclutates a percentage out of division of a nominator and denominater 
 	and handles possible ValueErrors as well as the ZeroDivisionError.
 
-	Parameters: 
-	nominator (int): 
-	denominator (int): 
+	Args: 
+		nominator (int): A number.
+		denominator (int): A number.
 
 	Returns: 
-	int: Integer between 1 and 99 representing the perce
-	str: Either "F" if result > 99 or "E" if result < 1.
+		int: Integer between 1 and 99 representing the perce
+		str: Either "F" if result > 99 or "E" if result < 1.
 
 	Raises:
-	ValueError: If one of the passed arguements is None 
-	or passed arguments are not of type int.
-	ZeroDivisionError: If denominator is zero.
+		ValueError: If one of the passed arguements is None 
+		or passed arguments are not of type int.
+		ZeroDivisionError: If denominator is zero.
 	"""
 
 	# checking arguments for None
