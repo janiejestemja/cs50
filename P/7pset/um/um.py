@@ -9,12 +9,11 @@ def count(s):
     """
     Counts occurences of 'um'. 
 
-    Parameters:
-    s (str): A str potentially containing multiple 'um's.
+    Args:
+        s (str): A str potentially containing multiple 'um's.
 
     Returns:
-    int: Number of occurences of 'um'.
-
+        int: Number of occurences of 'um'.
     """
 
     # enforcing lowercase

@@ -8,11 +8,11 @@ def validate(ip):
     """ 
     Simplified validation of IPv4 Adresses.
 
-    Parameters:
-    ip (str): A str potentially containing valid IPv4 Adress.
+    Args:
+        ip (str): A str potentially containing valid IPv4 Adress.
     
     Returns:
-    bool: Result of validation.
+        bool: Result of validation.
     """
 
     # trying to extract substrings into a list

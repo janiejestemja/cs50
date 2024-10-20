@@ -9,11 +9,14 @@ def convert(s):
     """
     Converts times in 12h format to 24h format.
 
-    Paramters:
-    s (str): A str containing times in 12h format as specified.
+    Args:
+        s (str): A str containing times in 12h format as specified.
 
     Returns:
-    str: A corresponding str containing the given times in 24h format.
+        str: A corresponding str containing the given times in 24h format.
+    
+    Raises:
+        ValueError: If the given argument does not adhere to expected format.
     """
     # checking and assigning
     if match := re.search(r"^(1?\d)(?::([0-5]\d))? ([A|P])M to (1?\d)(?::([0-5]\d))? ([A|P])M$", s, re.IGNORECASE):
