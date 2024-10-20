@@ -12,12 +12,11 @@ def calories_of_fruit(fruit_name):
 	Checks in a dictionary containing fruits and their calories per portion
 	(source: "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/raw-fruits-poster-text-version-accessible-version").
 	
-	Parameters:
-	fruit_name (str): a str that might or might not be a fruit name.
+	Args:
+		fruit_name (str): a str that might or might not be a fruit name.
 
 	Returns:
-	calories (int): colories per portion of the fruit 
-	calories (None): if fruit is not found in dictionary 
+		calories (int/None): colories per portion of the fruit and None if fruit is not found in dictionary.
 	"""
 	fruit_calories_per_portion = {
 	"apple": 130,

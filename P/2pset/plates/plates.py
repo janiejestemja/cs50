@@ -16,11 +16,11 @@ def is_valid(s):
     """
     Checks simplified for validity of a str to be accepted as a vanity plate in Massachusetts
     
-    Parameters:
-    s (str): a str representing a potential vanity plate
+    Args:
+        s (str): a str representing a potential vanity plate
 
     Returns: 
-    bool: Truthvalue of the question if str is a valid vanity plate
+        bool: Truthvalue of the question if str is a valid vanity plate
     """
 
     # lengthcheck
