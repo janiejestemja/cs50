@@ -11,14 +11,14 @@ def interpreter(x, y, z):
 	"""
 	A basic calculator covering addition, subtraction, multiplication and division
 	
-	Parameters:
-	x (int): is an integer
-	y (chr): is str(+), str(-), str(*), or str(/)
-	z (int): is an integer and not 0 if y = str(/)
+	Args:
+		x (int): is an integer
+		y (chr): is str(+), str(-), str(*), or str(/)
+		z (int): is an integer and not 0 if y = str(/)
 
 	Returns:
-	float: an interpretation of the given arguments rounded to the 
-	first decimal point.
+		float: an interpretation of the given arguments rounded to the 
+		first decimal point.
 	"""
 	
 	# typeforcing x and y

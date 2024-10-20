@@ -22,12 +22,12 @@ def convert(time):
 	"""
 	Converts a str containing a time to a floating point value.
 
-	Parameters:
-	time (str): a str containing a time formatted like "%H:%M".
+	Args:
+		time (str): a str containing a time formatted like "%H:%M".
 
 	Returns:
-	float: a floating point value representing the given time
-	as floating point number of hours.
+		float: a floating point value representing the given time
+		as floating point number of hours.
 	"""
 
 	# splitting time into hours and minutes
